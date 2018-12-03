@@ -7,6 +7,10 @@ p.warning{
   text-shadow: 1px 1px 1px black;
 }
 
+p.warning::before {
+  content:"WARNING!:"
+}
+
 p {
   color:red;
   background-color: lightgray;
