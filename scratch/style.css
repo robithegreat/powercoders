@@ -4,3 +4,10 @@ p {
   margin-left: 1em;
   margin-right: 1em;
 }
+
+p#footer{
+  border-top: 1px solid black;
+  background-color: white;
+  padding-top: .5em;
+  margin-left: 0;
+}
