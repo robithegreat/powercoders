@@ -1,3 +1,12 @@
+p.warning{
+  background-color: red;
+  color: white;
+  font-style: bold;
+  padding: .5em 1em;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+
 p {
   color:red;
   background-color: lightgray;
