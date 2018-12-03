@@ -11,3 +11,8 @@ p#footer{
   padding-top: .5em;
   margin-left: 0;
 }
+
+em{
+  font-style: normal;
+  text-decoration: underline;
+}
