@@ -12,7 +12,7 @@ p#footer{
   margin-left: 0;
 }
 
-em{
+p em{
   font-style: normal;
   text-decoration: underline;
 }
