@@ -1,72 +1,114 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+<!-- this is the link of css file and
+link to the icon url-(from internet)-->
   <head>
-    <title>My Curriculum Vitae</title>
+    <meta charset="utf-8">
+    <title>profetional resume</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="robi.css">
   </head>
-    <body background="plain_grey__simple_1204.jpg">
-      <div class="cv">
-
-         <img src="ROBI.jpg"  align="right" width="180" height="180" alt="my photo">
-         <h4 align="left">Date =29/11/2018</h4>
-         <h4 align="left">Day =  Thursday</h4>
-         <h1 align="center">CIRCUMULAT VITA</h1>
-
+  <body>
+<!-- this is the left section of the cv page-->
+<!-- this is the left section of the cv page-->
+    <div id="section-left">
+      <div class="section-into">
+        <div class="logo"><img src="ROBI.jpg" class="round" alt="avater"></div>
+        <!-- this is the name of the cv owner-->
+        <h1>robel debesay</h1>
+        <!--this is birthday career and type -->
+        <div class="content">
+          <span class="dbd">07.NOV.1989</span><br>
+          <span class="into">Computer Graguete</span><br>
+          <span class="title">Devoloper</span><br>
+        </div>
+         <hr>
+         <!--this is contact information of the person-->
+         <div id="contact">
+           <span class="num"><i class="fa fa-phone" aria-hidden="true"></i> 0779940721</span>
+           <div class="email">
+             <i class="fa fa-envelope" aria-hidden="true"></i>
+             <a href="mailto:joe@example.com?subject=feedback">robi711198@gmail.com</a>
+           </div>
+           <div class="web">
+             <i class="fa fa-link" aria-hidden="true"></i>
+             <a href="https://example.com">www.example.com</a>
+           </div>
+         </div>
+       </div>
+        <!--this is the profile of the person -->
+       <div class="title">
+         <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>.Profile</h2>
          <ul>
-            <li>Name=Robel Debesay</li>
-            <li>Date of birth<span class="birth-date">=7/11/1989</span></li>
-            <li>Place of Birth <span class="place">=Girba(Sudan)</span> </li>
-            <li>Marital Status<span class="status">=merrid</span></li>
-            <li>Current Adress<span class="adress">=Roggenhausenweg 3,<br>P.O.L=5035,<br>Place=Unterentfelden</span></li>
-            <li>Telephon Num<span class="telephon">=0779940721</span></li>
-        </ul>
-
-        <h2 align="center">EDUCATION</h2>
-
-        <ul>
-          <li><span class="elementary-class">09/1997-07/2004___Elementary school</span></li>
-          <li><span class="secondary-school">09/2004-07/2007___Secondary school</span></li>
-          <li><span class="sawa 12<sup>th</sup>gread">09/2007-07/2008___12<sup>th</sup>gread</span></li>
-          <li><span class="eit(mainefhi-colleg)">09/2008-07/2012___Bachlor Degree in Math &amp;Computer</span></li>
-          <li><span class="lunga-nova(doutsch-B1)">11/2017-05/2018___Doutsch B1 certificat</span></li>
-       </ul>
-
-       <h2 align="center">PROFETIONAL CAREER</h2>
-
-       <ul>
-         <li><span class="work-in-egypt">(11/2015-06/2016)___Worked in Egypt English Teatching &amp;Interpreter</span> </li>
-         <li><span class="work-in-italy">(01/2017-06/2017)___Worked as Interpreter"</span></li>
-      </ul>
-
-      <h2 align="center">SPECIAL KNOWLEDGE</h2>
-
-      <ul>
-        <li><span class="speaking"><b>Speaking different languags</b>=Bilen,Tigrina,Arebic,Tigre,English,Italian,German</span></li>
-        <li><span class="it-skill"><b>Basic programming langueg</b>=html,java,c</span></li>
-        <li><span class="microsoft"><b>Microsoft office</b> =Excellent to very good Word, Excel and PowerPoint skills</span></li>
-        <li><span class="adobe"><b>Adobe Plate</b> =Good user knowledge in Illustrator and InDesign</span></li>
-      </ul>
-
-      <h2 align="center">  HOBBIS</h2>
-
-      <ol>
-        <li>Puzzls</li>
-        <ul>
-          <li>Chase</li>
-        </ul>
-        <li>Volly Ball</li>
-        <ul>
-          <li>Basket Basket</li>
-        </ul>
-          <li>Painting</li>
-        <ul>
-            <li>Cooking</li>
-        </ul>
-           <li>Reading</li>
-      </ol>
-
+            <li><span class="name">Name____Robel Debesay</span></li>
+            <li><span class="birth-date">Date of birth___7/11/1989</span></li>
+            <li> <span class="place">Place of Birth___Girba(Sudan)</span> </li>
+            <li><span class="status">Marital Status___merrid</span></li>
+            <li><span class="adress">Current Adress___Roggenhausenweg 3,<br>P.O.L___5035,<br>Place___Unterentfelden</span></li>
+         </ul>
+       </div>
     </div>
-
-  </body>
-
+     <!--this is the Educational background  of the person -->
+    <div class="title">
+      <h3><i class="fa fa-book" aria-hidden="true"></i>.Education</h3>
+      <ul>
+         <li><span class="elementary-class">09/1997-07/2004___Elementary school</span></li>
+         <li><span class="secondary-school">09/2004-07/2007___Secondary school</span></li>
+         <li><span class="sawa 12<sup>th</sup>gread">09/2007-07/2008___12<sup>th</sup>gread</span></li>
+         <li><span class="eit(mainefhi-colleg)">09/2008-07/2012___Bachlor Degree in Math &amp;Computer</span></li>
+         <li><span class="lunga-nova(doutsch-B1)">11/2017-05/2018___Doutsch B1 certificat</span></li>
+      </ul>
+    </div>
+    <div id="section-right">
+      <div class="wrapper">
+         <!--this are the special skill of the person -->
+        <div class="section">
+          <h3><i class="fa fa-book" aria-hidden="true"></i>.Skills</h3>
+          <ul>
+            <li><span class="speaking">Speaking different languags =Bilen,Tigrina,Arebic,Tigre,English,Italian,German</span></li>
+            <li><span class="it-skill">Basic programming langueg=html,java,c</span></li>
+          </ul>
+        </div>
+        <div class="section">
+           <!--this is the work Expirenced of the person -->
+          <div class="title">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            <h3>Expirenced</h3>
+            <ul>
+              <li><span class="work-in-egypt">(11/2015-06/2016)___Worked in Egypt English Teatching &amp;Interpreter</span> </li>
+              <li><span class="work-in-italy">(01/2017-06/2017)___Worked as Interpreter"</span></li>
+            </ul>
+          </div>
+           <!--this is the web divelopment career of the person -->
+          <div class="content">
+            <h3>web Devoloper</h3>
+            <ul>
+              <li>programming</li>
+              <li>photo editing</li>
+              <li>project managment</li>
+              <li>classics</li>
+            </ul>
+          </div>
+        </div>
+         <!--this are the hobbis of the person -->
+        <div class="hobbis"><h3>HOBBIS</h3>
+          <ol>
+            <li>Puzzls</li>
+            <ul>
+              <li>Chase</li>
+            </ul>
+            <li>Volly Ball</li>
+            <ul>
+              <li>Basket Basket</li>
+            </ul>
+            <li>Painting</li>
+            <ul>
+              <li>Cooking</li>
+            </ul>
+            <li>Reading</li>
+          </ol>
+        </div>
+      </div>
+     </div>
+   </body>
 </html>

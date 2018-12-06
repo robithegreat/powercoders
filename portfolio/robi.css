@@ -1,0 +1,85 @@
+html{
+  background-color:#444;
+  padding: 0em;
+}
+
+body{
+  background-color:#b5dfd9;
+  font-family:´lato´, sanc-serif;
+  margin: 1em auto;
+  max-width: 50em;
+  height:50.625em;
+}
+
+div.title{
+  border-radius: 2em solid green;
+}
+ul{
+  padding: 20px
+
+  font-size: 1em;
+  color:redrgb(123, 135, 139);
+}
+
+#section-left{
+  font-size: 1em;
+  border-:2em solid white;
+  border-radius: 5px;
+  padding-left:2em;
+  width:35%;
+  float:left;
+  height:100%;
+  background-color:#ecb7b3;
+  color:#fff;
+  border-right: 1em dashed #b5dfd9;
+  border-left: 2em dashed rgb(13, 109, 140);
+  padding-right: 2em;
+  margin-bottom: -4em;
+}
+
+img.round{
+  image-resolution: from-image;
+  width: 40%;
+  height: 40%;
+  border-radius: 70%;
+  margin-left: 30%;
+}
+.intro hr {
+  width: 4em;
+  display: block;
+  height: 2px;
+  border: 0px;
+  border-top: 2px solid;
+}
+.dob{
+  text-decoration: overline underline;
+}
+.intro.content{
+  margin-bottom:20px;
+}
+#contact {
+  margin-top:40px;
+}
+h1{
+  text-transform: uppercase;
+  text-decoration: underline;
+
+}
+h2{
+  border: 2em 1em ;
+  border-radius: 2em solid red;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: underline;
+  color:rgb(181, 87, 22);
+}
+h3{
+  border: 2em 1em ;
+  border-radius: 2em solid red;
+  align-content: center;
+  font-style:italic;
+  text-decoration: underline;
+  color: rgb(64, 25, 19);
+  border-bottom: .2em solid redrgb(113, 126, 129);
+
+}
