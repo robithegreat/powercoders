@@ -1,0 +1,16 @@
+body{
+  background-color: rgb(103, 171, 235);
+
+}
+p,li{
+  align-items: center;
+  font-size: 2em;
+  font-family: Caveat;
+}
+img{
+  margin-left: 15%;
+}
+h1{
+  text-decoration: underline;
+  margin-left: 15%;
+}
