@@ -3,7 +3,7 @@ html{
   padding: 0em;
   font-size: 1.5em;
   line-height: 1.5;
-  border: .5em solid red;
+  border: .5em solid white;
 }
 
 body{
@@ -86,6 +86,7 @@ h2{
   color:rgb(181, 87, 22);
 }
 h3{
+  font-size: 1.4em;
   border: 2em 1em ;
   border-radius: 2em solid red;
   align-content: center;
