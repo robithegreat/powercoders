@@ -1,0 +1,53 @@
+body{
+  text-align: left;
+  background-color: rgb(109, 121, 205);
+
+}
+hr{
+  color: lightgreen;
+}
+#Ingrediants, .recipe, .about{
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 1em solid lightgreen;
+  line-height: 2;
+}
+img{
+height: 20em;
+width: 30em;
+padding: 2em;
+}
+
+ h1{
+
+  font-family: Cinzel;
+  text-decoration: underline;
+  color: rgb(64, 17, 29);
+
+}
+h2{
+
+  font-family: Cinzel;
+  color: rgb(107, 67, 19);
+  text-decoration: underline;
+}
+li{
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family:Cinzel ;
+  color: rgb(51, 38, 3);
+}
+h3{
+  align-self: auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family:Cinzel ;
+  color: rgb(224, 230, 130);
+}
+.about{
+  align-self: auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family:Cinzel ;
+  color: rgb(224, 230, 130);
+}

@@ -1,0 +1,33 @@
+*{
+
+  background-color: rgb(213, 221, 215);
+  text-align: left;
+  border-radius: .2em;
+}
+body{
+  border: 2em solid  rgb(101, 112, 100);
+  font-weight: bold;
+  color: green;
+}
+.chekolade p {
+  max-width: 50%;
+}
+h1{
+  text-decoration: underline;
+  margin-top: -1em;
+  text-align: center;
+  background-color: lightblue;
+
+}
+p img{
+  float: right;
+}
+#one img{
+  height: 70em;
+  width: 35em;
+  float: bottom;
+  border-left: 2em solid lightblue;
+  border-top: .5em solid lightblue;
+  margin-top: 1em;
+  border-bottom: 11.1em solid  lightblue;
+}
