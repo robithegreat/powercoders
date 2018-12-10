@@ -1,4 +1,4 @@
-html{
+html {
   background-color:#444;
   padding: 0em;
   font-size: 1.5em;
@@ -6,9 +6,8 @@ html{
   border: .5em solid white;
 }
 
-body{
+body {
   background-color:#b5dfd9;
-
   margin: 1em auto;
   max-width: 50em;
   height:50.625em;
@@ -18,17 +17,17 @@ body{
   border-right: 1em solid rgb(13, 109, 140);
 }
 
-div.title{
+div.title {
   border-radius: 2em solid green;
 }
-ul{
-  padding: 20px
 
+ul {
+  padding: 20px
   font-size: 1em;
   color:redrgb(10, 10, 10);
 }
 
-#section-left{
+#section-left {
   font-size: 1em;
   border-:2em solid white;
   border-radius: 5px;
@@ -45,10 +44,12 @@ ul{
   border-top: 1em solid #ecb7b3;
   line-height: 1.5;
 }
-#section-left .title ul{
+
+#section-left .title ul {
   margin-left: -15px;
 }
-img.round{
+
+img.round {
   image-resolution: from-image;
   width: 60%;
   height: 50%;
@@ -56,6 +57,7 @@ img.round{
   margin-left: 10%;
 
 }
+
 .intro hr {
   width: 4em;
   display: block;
@@ -63,21 +65,25 @@ img.round{
   border: 0px;
   border-top: 2px solid;
 }
-.dob{
+
+.dob {
   text-decoration: overline underline;
 }
-.intro.content{
+
+.intro.content {
   margin-bottom:20px;
 }
+
 #contact {
   margin-top:40px;
 }
-h1{
+
+h1 {
   text-transform: uppercase;
   text-decoration: underline;
 
 }
-h2{
+h2 {
   border: 2em 1em ;
   border-radius: 2em solid red;
   font-size: 2em;
@@ -85,7 +91,8 @@ h2{
   text-decoration: underline;
   color:rgb(181, 87, 22);
 }
-h3{
+
+h3 {
   font-size: 1.4em;
   border: 2em 1em ;
   border-radius: 2em solid red;
@@ -94,5 +101,4 @@ h3{
   text-decoration: underline;
   color: rgb(64, 25, 19);
   border-bottom: .2em solid redrgb(113, 126, 129);
-
 }
