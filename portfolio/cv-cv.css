@@ -1,0 +1,72 @@
+  body {
+  font-style: italic;
+  background-color: rgb(249, 142, 158);
+}
+
+img {
+  width: 200px;
+  height: 250px;
+  border: 10px outset lightgray;
+  margin-left: 5.5em;
+
+
+}
+
+ h1 {
+   text-align: center;
+   font-weight: bold;
+   color: rgb(24, 52, 191);
+   margin-left: 0em;
+   font-size: 3em;
+   text-decoration: underline;
+ }
+
+ h1:hover {
+   text-transform: uppercase;
+   color:white;
+   font-size: 2.9em;
+ }
+
+  h2 , h3 {
+    text-decoration: underline;
+    color:rgb(97, 33, 60);
+  }
+ .content {
+   padding-left: 2em;
+   font-size: 1.2em;
+   color: white;
+ }
+
+ .second-row {
+   max-width: 400px;
+   font-size: 1.2em;
+
+ }
+
+ #contact {
+   color: white;
+   padding-left: 2em;
+   font-size: 1.2em;
+ }
+
+ .title-profile h2 {
+   font-size: 2.5em;
+   text-align: center;
+   color: rgb(24, 52, 191);
+   text-decoration: underline;
+ }
+
+ .title-Profile:hover {
+   color: white;
+   text-transform: uppercase;
+ }
+ .title-profile ul li {
+   color: white;
+   font-size: 1.2em;
+   padding-left: 2em;
+ }
+
+.third-row {
+  width: 400px;
+
+}

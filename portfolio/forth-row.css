@@ -1,0 +1,9 @@
+.forth-row img {
+  display: inline-block;
+  position:absolute;
+  top: 1em;
+  margin-top: -.5em;
+  left: 1170px;
+  width: 550px;
+  height: 898px;
+}

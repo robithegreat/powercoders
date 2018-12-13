@@ -1,0 +1,51 @@
+body {
+  height: 900px;
+}
+.first-row {
+  animation: change 5s infinite ;
+  background-color: rgb(189, 75, 238);
+  border: 10px inset rgb(205, 196, 168);
+  max-width: 390px;
+}
+
+.forth-row img {
+  display: none;
+}
+ #poem {
+   line-height: 30px;
+   font-family: sans-serif;
+
+ }
+.third-row {
+  animation: change 6s infinite ;
+  overflow: scroll;
+  position: absolute;
+  top: 0em;
+  line-height: 2;
+  margin-top: .4em;
+  padding: 1em;
+  left: 835px;
+  font-size: 1.4em;
+  border: 10px outset rgb(121, 123, 128);
+  max-height: 38em;
+  max-width: 350px;
+  background-color: rgb(191, 235, 187);
+}
+
+
+.second-row {
+  animation: change 7s infinite ;
+  width: 400px;
+  background-color: rgb(154, 188, 227);
+  border: 10px inset lightblue;
+  border-right: 10px outset lightblue;
+  padding-bottom: 1em;
+}
+@keyframes change {
+  0%{background-color: rgb(143, 123, 11)}
+  20%{background-color: rgb(140, 80, 179)}
+  40%{background-color: rgb(231, 76, 81)}
+  60%{background-color: rgb(164, 176, 40)}
+  80%{background-color: rgba(24, 181, 116, 0.72)}
+  100%{background-color: rgba(45, 43, 46, 0.77)
+  }

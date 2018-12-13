@@ -1,0 +1,44 @@
+ body {
+
+   margin-bottom: 10em;
+   background-color: rgb(154, 188, 227);
+ }
+.pictuer {
+  display: none;
+}
+ .first-row {
+   animation: change 5s infinite ;
+   margin-top: 0em;
+   max-width: 390px;
+   background-color: rgb(154, 188, 227);
+   border: 10px inset rgb(87, 154, 231);
+ }
+
+ .second-row {
+   animation: change 6s infinite ;
+  position: absolute;
+  top: .5em;
+  margin-left: 410px;
+  width: 400px;
+  background-color: rgb(154, 188, 227);
+  border: 10px inset lightblue;
+  border-right: 10px outset lightblue;
+  padding-bottom: 1em;
+}
+.third-row {
+  animation: change 7s infinite ;
+  position: absolute;
+  left: 0px;
+  font-size: 1.49em;
+  border: 10px outset lightblue;s
+  background-color: rgb(191, 235, 187);
+  width: 830px;
+}
+@keyframes change {
+  0%{background-color: rgb(143, 123, 11)}
+  20%{background-color: rgb(140, 80, 179)}
+  40%{background-color: rgb(231, 76, 81)}
+  60%{background-color: rgb(164, 176, 40)}
+  80%{background-color: rgba(24, 181, 116, 0.72)}
+  100%{background-color: rgba(45, 43, 46, 0.77)
+  }
