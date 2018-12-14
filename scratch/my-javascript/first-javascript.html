@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>chenge-para-class</title>
+    <script src="setClass.js"  type="text/javascript"></script>
     <link rel="stylesheet" href="first-javascript.css">
   </head>
   <body>
@@ -13,33 +14,10 @@
       <li onclick="setClassTip(event);">make it a tip</li>
       <li onclick="ClearClass(event);">make it a normal</li>
     </ul>
-    
+
     <p class="warning">This is an example warning.</p>
 
     <p class="tip">This is an example tip.</p>
 
-    <script>
-      console.log('My code is running !');
-
-      function greet(name){
-        console.log('Hello,' + name);
-      }
-
-      function setClassTip(event){
-        let el = document.getElementById('mypara');
-        el.className = 'tip';
-      }
-
-      function setClassWarning(){
-        let el = document.getElementById('mypara')
-        el.className = 'warning';
-      }
-
-      function ClearClass(){
-        let el = document.getElementById('mypara')
-        el.className = '';
-      }
-
-    </script>
   </body>
 </html>
