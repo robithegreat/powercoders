@@ -9,12 +9,37 @@
     <p id="mypara">This is a paragraph of text that can change style. use the options below to change how this looks.</p>
 
     <ul>
-      <li>make it a warning</li>
-      <li>make it a tip</li>
-      <li>make it a normal</li>
+      <li onclick="setClassWarning(event);">make it a warning</li>
+      <li onclick="setClassTip(event);">make it a tip</li>
+      <li onclick="ClearClass(event);">make it a normal</li>
     </ul>
+    
     <p class="warning">This is an example warning.</p>
 
     <p class="tip">This is an example tip.</p>
+
+    <script>
+      console.log('My code is running !');
+
+      function greet(name){
+        console.log('Hello,' + name);
+      }
+
+      function setClassTip(event){
+        let el = document.getElementById('mypara');
+        el.className = 'tip';
+      }
+
+      function setClassWarning(){
+        let el = document.getElementById('mypara')
+        el.className = 'warning';
+      }
+
+      function ClearClass(){
+        let el = document.getElementById('mypara')
+        el.className = '';
+      }
+
+    </script>
   </body>
 </html>
