@@ -1,4 +1,6 @@
 button {
+    position: absolute;
+    left: 50%;
     border: 0;
     line-height: 1.5;
     padding: 0 20px;
@@ -23,4 +25,19 @@ button:hover {
 button:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
     inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+ li {
+     padding-right: 5em;
+     line-height: 3em;
+}
+spann{
+    padding-right: 5em;
+    line-height: 3em;
+    width: 40%;
+}
+
+#buton{
+    position: absolute;
+    left: 50%;
+    top: 5em;
 }
