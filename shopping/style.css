@@ -1,14 +1,26 @@
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+h1 {
+    padding-left: 2em;
+    color: white;
+    align-content: center;
+    font-size: 4em;
+}
+
 button {
     position: absolute;
-    left: 50%;
+    left: 40%;
     border: 0;
     line-height: 1.5;
-    padding: 0 20px;
+    padding-right: 2em;
+    padding: 12px;
     font-size: 1rem;
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(220, 0, 0, 1);
     background-image: linear-gradient(to top left,
     rgba(0, 20, 0, .2),
@@ -18,26 +30,71 @@ button {
     inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-button:hover {
+#rb {
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    right: 0em;
+    bottom: 0em;
+    background-color: #dddddd;
+    height: 100%;
+    width: 50%;
+    opacity: 0.2;
+    background-size: cover;
+}
+#add:hover {
     background-color: rgba(255, 0, 0, 1);
 }
 
-button:active {
+#add:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
     inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
  li {
-     padding-right: 5em;
-     line-height: 3em;
-}
-spann{
-    padding-right: 5em;
-    line-height: 3em;
-    width: 40%;
+     border: 2px outset white;
+     color: white;
+     width: 50%;
+     display: grid;
+     grid-template-columns: 30% 20%;
 }
 
-#buton{
+p{
+    display: inline-block;
+}
+
+ label {
+     padding-right: 1em;
+     font-size: 2em;
+     color: white;
+ }
+
+ #myUL{
+
+
+ }
+
+ input {
+     width: 15em;
+     height: 2em;
+     font-size: 1.5em;
+ }
+
+ #clearButton {
+     position: absolute;
+     top: 10em;
+     left: 46em;
+ }
+
+#clearButton:hover{
+    background-color: chocolate;
+}
+
+#add{
     position: absolute;
     left: 50%;
-    top: 5em;
+    top: 10em;
+    background-color: chartreuse;
+}
+#add:hover{
+    background-color: chocolate;
 }
