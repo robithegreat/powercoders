@@ -27,58 +27,62 @@ function createNewListItem(itemName) {
 
     return listItem;
 }
+function domContenetLoaded() {
 
-document.addEventListener('DOMContentLoaded', function (event) {
-    /**widget that the use typesson item in to.*/
-    const inputBox = document.getElementById('item');
-    const shoppingList = document.querySelector('ul');
-    const addItemButton = document.querySelector('#add');
-    const clearButton = document.getElementById('clearButton');
-    addItemButton.disabled = true;
-    inputBox.focus();
-    clearButton.disabled = true;
+        /**widget that the use typesson item in to.*/
+        const inputBox = document.getElementById('item');
+        const shoppingList = document.querySelector('ul');
+        const addItemButton = document.querySelector('#add');
+        const clearButton = document.getElementById('clearButton');
+        addItemButton.disabled = true;
+        inputBox.focus();
+        clearButton.disabled = true;
 
-    document.getElementById('add').addEventListener('click', function (event) {
-        if (inputBox.value.trim() !== '') {
-            shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
+        document.getElementById('add').addEventListener('click', function (event) {
+            if (inputBox.value.trim() !== '') {
+                shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
+                inputBox.value = '';
+                addItemButton.disabled = true;
+                clearButton.disabled = false;
+            }
+            inputBox.focus();
+        });
+
+        document.querySelector('input').addEventListener('keyup', function (event) {
+            const trimmedValue = inputBox.value.trim();
+            addItemButton.disabled = trimmedValue === '';
+
+            if (trimmedValue === '') {
+                return;
+
+            }
+            if (event.key !== 'Enter') {
+                return;
+            }
+
+            shoppingList.appendChild(createNewListItem(trimmedValue));
             inputBox.value = '';
             addItemButton.disabled = true;
             clearButton.disabled = false;
-
-        }
-        inputBox.focus();
-    });
-
-    document.querySelector('input').addEventListener('keyup', function (event) {
-        const trimmedValue = inputBox.value.trim();
-        addItemButton.disabled = trimmedValue === '';
-
-        if (trimmedValue === '') {
-            return;
-
-        }
-        if (event.key !== 'Enter') {
-            return;
-        }
-
-        shoppingList.appendChild(createNewListItem(trimmedValue));
-        inputBox.value = '';
-        addItemButton.disabled = true;
-        clearButton.disabled = false;
-        inputBox.focus();
-    });
-
-    document.getElementById('clearButton').addEventListener('click', function (event) {
-        let x = document.querySelectorAll('li');
-        x.forEach(function (el) {
-            el.remove();
-            clearButton.disabled = true;
             inputBox.focus();
         });
+
+        document.getElementById('clearButton').addEventListener('click', function (event) {
+            let x = document.querySelectorAll('li');
+            x.forEach(function (el) {
+                el.remove();
+                clearButton.disabled = true;
+                inputBox.focus();
+            });
+        });
+
+};
+
+
+if (document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', function (event) {
+        domContenetLoaded();
     });
-
-
-});
-
-
-
+}else {
+    domContenetLoaded();
+}

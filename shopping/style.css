@@ -100,7 +100,7 @@ p{
 
 #add{
     position: absolute;
-    left: 50%;
+    left: 40em;
     top: 10em;
     background-color: chartreuse;
 }
