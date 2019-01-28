@@ -30,6 +30,7 @@ button {
     inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
+
 #rb {
     position: absolute;
     top: 0em;
@@ -49,6 +50,10 @@ button {
 #add:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
     inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+#add:disabled {
+    background-color: white;
 }
  li {
      border: 2px outset white;
@@ -74,7 +79,7 @@ p{
  }
 
  input {
-     width: 15em;
+     width: 15.5em;
      height: 2em;
      font-size: 1.5em;
  }
@@ -89,6 +94,10 @@ p{
     background-color: chocolate;
 }
 
+#clearButton:disabled {
+    background: #dddddd;
+}
+
 #add{
     position: absolute;
     left: 50%;
@@ -97,4 +106,8 @@ p{
 }
 #add:hover{
     background-color: chocolate;
+}
+
+#add:disabled {
+    background: #fff8e0;
 }
