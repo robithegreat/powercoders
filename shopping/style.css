@@ -31,7 +31,7 @@ button {
 }
 
 
-#rb {
+rb {
     position: absolute;
     top: 0em;
     left: 50%;
@@ -56,6 +56,7 @@ button {
     background-color: white;
 }
  li {
+     background: darkcyan;
      border: 2px outset white;
      color: white;
      width: 50%;
@@ -78,13 +79,16 @@ p{
 
  }
 
- input {
-     width: 15.5em;
+ #item {
+     width: 10.5em;
      height: 2em;
+     border: 2px inset black;
+     border-radius: 10px;
      font-size: 1.5em;
  }
 
  #clearButton {
+     background-color: red;
      position: absolute;
      top: 10em;
      left: 46em;
@@ -95,7 +99,7 @@ p{
 }
 
 #clearButton:disabled {
-    background: #dddddd;
+    background: red;
 }
 
 #add{
@@ -109,5 +113,17 @@ p{
 }
 
 #add:disabled {
-    background: #fff8e0;
+    background: red;
+}
+
+#times {
+    position: absolute;
+    top: 6.7em;
+    border: 2px inset black;
+    border-radius: 10px;
+    left: 22em;
+    width: 3.5em;
+    height: 2em;
+    font-size: 1.5em;
+
 }
