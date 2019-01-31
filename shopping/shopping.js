@@ -1,21 +1,21 @@
 /**
  * Creates and returns an 'li' element for  inclusion in the shopping list.
  *
- * @param {string} itemName Name of the item to add to the list
+ * @param {{name:string, quantity:string}} item item appends  to the list
  * @returns {HTMLElement} li element
  */
 
-function createNewListItem(itemName, quantity) {
+function createNewListItem(item) {
     const listItem = document.createElement('li');
     const span = document.createElement('p');
 
-    span.innerText = itemName;
+    span.innerText = item.name;
     listItem.appendChild(span);
 
-    if (quantity !== '') {
+    if (name.quantity !== '') {
         listItem.appendChild(document.createTextNode(''));
         const quantityText = document.createElement('span');
-        quantityText.textContent = `(${quantity})`;
+        quantityText.textContent = `(${name.quantity})`;
         listItem.appendChild(quantityText);
     }
 
@@ -51,6 +51,8 @@ function domContenetLoaded() {
         if (inputBox.value.trim() !== '') {
             shoppingList.appendChild(createNewListItem(inputBox.value.trim(), inputBoxQ.value.trim()));
             inputBox.value = '';
+            inputBoxQ.value = '';
+            inputBox.focus();
             addItemButton.disabled = true;
             clearButton.disabled = false;
         }
@@ -62,14 +64,20 @@ function domContenetLoaded() {
         addItemButton.disabled = trimmedValue === '';
 
         if (trimmedValue === '') {
+            inputBox.focus();
             return;
 
         }
         if (event.key !== 'Enter') {
+            inputBox.focus();
             return;
         }
 
-        shoppingList.appendChild(createNewListItem(inputBox.value.trim(), inputBoxQ.value.trim()));
+        const item = {
+            name: inputBox.value.trim(),
+            quantity:inputBoxQ.value.trim()
+        };
+        shoppingList.appendChild(createNewListItem(item));
         inputBox.value = '';
         inputBoxQ.value = '';
         addItemButton.disabled = true;
@@ -83,11 +91,20 @@ function domContenetLoaded() {
             return;
         }
         if (event.key !== 'Enter') {
+            inputBoxQ.focus();
             return;
         }
-            shoppingList.appendChild(createNewListItem(inputBox.value.trim(), inputBoxQ.value.trim()));
+
+        const item = {
+            name: inputBox.value.trim(),
+            quantity:inputBoxQ.value.trim()
+    };
+            shoppingList.appendChild(createNewListItem(item));
             inputBoxQ.value = '';
             inputBox.value = '';
+            inputBox.focus();
+            addItemButton.disabled = true;
+            clearButton.disabled = false;
     });
 
     document.getElementById('clearButton').addEventListener('click', function (event) {
@@ -98,7 +115,6 @@ function domContenetLoaded() {
             inputBox.focus();
         });
     });
-
 }
 
 if (document.readyState === 'loading') {

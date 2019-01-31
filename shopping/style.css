@@ -88,9 +88,11 @@ p{
  }
 
  #clearButton {
-     background-color: red;
+     background-color: green;
      position: absolute;
-     top: 10em;
+     border: 2px solid red;
+     border-radius: 100%;
+     top: 9em;
      left: 46em;
  }
 
@@ -99,12 +101,14 @@ p{
 }
 
 #clearButton:disabled {
-    background: red;
+    background: #dddddd;
 }
 
 #add{
     position: absolute;
     left: 40em;
+    border: 2px solid red;
+    border-radius: 100%;
     top: 10em;
     background-color: chartreuse;
 }

@@ -1,6 +1,7 @@
 body {
   height: 900px;
 }
+
 .first-row {
   animation: change 5s infinite ;
   background-color: rgb(189, 75, 238);
@@ -11,11 +12,12 @@ body {
 .forth-row img {
   display: none;
 }
+
  #poem {
    line-height: 30px;
    font-family: sans-serif;
-
  }
+
 .third-row {
   animation: change 6s infinite ;
   overflow: scroll;
@@ -32,7 +34,6 @@ body {
   background-color: rgb(191, 235, 187);
 }
 
-
 .second-row {
   animation: change 7s infinite ;
   width: 400px;
@@ -41,6 +42,7 @@ body {
   border-right: 10px outset lightblue;
   padding-bottom: 1em;
 }
+
 @keyframes change {
   0%{background-color: rgb(143, 123, 11)}
   20%{background-color: rgb(140, 80, 179)}
