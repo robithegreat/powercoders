@@ -59,7 +59,7 @@ rb {
      background: darkcyan;
      border: 2px outset white;
      color: white;
-     width: 50%;
+     width: 45%;
      display: grid;
      grid-template-columns: 30% 20%;
 }
@@ -91,9 +91,9 @@ p{
      background-color: green;
      position: absolute;
      border: 2px solid red;
-     border-radius: 100%;
-     top: 9em;
-     left: 46em;
+     width:5.8em;
+     top: 14em;
+     left: 40em;
  }
 
 #clearButton:hover{
@@ -101,16 +101,15 @@ p{
 }
 
 #clearButton:disabled {
-    background: #dddddd;
+    background: red;
 }
 
 #add{
     position: absolute;
     left: 40em;
     border: 2px solid red;
-    border-radius: 100%;
     top: 10em;
-    background-color: chartreuse;
+    background-color: green;
 }
 #add:hover{
     background-color: chocolate;

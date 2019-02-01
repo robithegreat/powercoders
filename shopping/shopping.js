@@ -1,7 +1,22 @@
+
+/**
+ *
+ *
+ * @param name {string} name of the item
+ * @param quantity{string} Quantitay  of the item
+ * @constructor
+ */
+function ShoppingListItem(name,quantity) {
+
+    this.name = name;
+    this.quantity = quantity
+}
+
+
 /**
  * Creates and returns an 'li' element for  inclusion in the shopping list.
  *
- * @param {{name:string, quantity:string}} item item appends  to the list
+ * @param {ShoppingListItem} item item appends  to the list
  * @returns {HTMLElement} li element
  */
 
@@ -22,7 +37,7 @@ function createNewListItem(item) {
     const deleteButton = document.createElement('button');
     const text = document.createTextNode('Delete');
 
-    deleteButton.addEventListener('click', function (event) {
+    deleteButton.addEventListener('click', function () {
         listItem.remove();
 
         document.getElementById('clearButton').disabled = document.querySelectorAll('li').length === 0;
@@ -47,9 +62,10 @@ function domContenetLoaded() {
     inputBox.focus();
     clearButton.disabled = true;
 
-    document.getElementById('add').addEventListener('click', function (event) {
+    document.getElementById('add').addEventListener('click', function () {
         if (inputBox.value.trim() !== '') {
-            shoppingList.appendChild(createNewListItem(inputBox.value.trim(), inputBoxQ.value.trim()));
+            const item = new ShoppingListItem(inputBox.value.trim(),inputBoxQ.value.trim());
+            shoppingList.appendChild(createNewListItem(item));
             inputBox.value = '';
             inputBoxQ.value = '';
             inputBox.focus();
@@ -59,7 +75,7 @@ function domContenetLoaded() {
         inputBox.focus();
     });
 
-    document.querySelector('input').addEventListener('keyup', function (event) {
+    document.querySelector('input').addEventListener('keyup', function () {
         const trimmedValue = inputBox.value.trim();
         addItemButton.disabled = trimmedValue === '';
 
@@ -73,10 +89,7 @@ function domContenetLoaded() {
             return;
         }
 
-        const item = {
-            name: inputBox.value.trim(),
-            quantity:inputBoxQ.value.trim()
-        };
+        const item = new ShoppingListItem(inputBox.value.trim(),inputBoxQ.value.trim());
         shoppingList.appendChild(createNewListItem(item));
         inputBox.value = '';
         inputBoxQ.value = '';
@@ -85,20 +98,17 @@ function domContenetLoaded() {
         inputBox.focus();
     });
 
-    document.getElementById('times').addEventListener('keyup', function (event) {
+    document.getElementById('times').addEventListener('keyup', function () {
         const trimValue = inputBoxQ.value.trim();
+        addItemButton.disabled = trimValue === '';
         if (trimValue === '') {
             return;
         }
         if (event.key !== 'Enter') {
-            inputBoxQ.focus();
             return;
         }
 
-        const item = {
-            name: inputBox.value.trim(),
-            quantity:inputBoxQ.value.trim()
-    };
+        const item = new ShoppingListItem(inputBox.value.trim(),inputBoxQ.value.trim());
             shoppingList.appendChild(createNewListItem(item));
             inputBoxQ.value = '';
             inputBox.value = '';
@@ -107,7 +117,7 @@ function domContenetLoaded() {
             clearButton.disabled = false;
     });
 
-    document.getElementById('clearButton').addEventListener('click', function (event) {
+    document.getElementById('clearButton').addEventListener('click', function () {
         let x = document.querySelectorAll('li');
         x.forEach(function (el) {
             el.remove();
@@ -118,7 +128,7 @@ function domContenetLoaded() {
 }
 
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function (event) {
+    document.addEventListener('DOMContentLoaded', function () {
         domContenetLoaded();
     });
 } else {
