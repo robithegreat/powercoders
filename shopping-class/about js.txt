@@ -1,0 +1,33 @@
+Line 1  =  declares a function called `createNewListItem`. This function takes one parameter, called `itemName`.
+
+
+
+line  2  =  creates an (li) element.
+line  4  =  creates a (span) element.
+line  5  =  assain the itemname insaide the span element.
+
+line  7  = creates a (button) .
+line  8  = assains the button inner text is Delete.
+
+line  10  =  an evet listener  added to the deletebutton which has two parameters one  listens for the click event and undifained function .
+line  11  = this line removes the li from the list items after the delete button was clicked.
+line  12  = this line is focusing on the inputbox after the delete button was clicked.
+line  13  = this line closes the the undifaind function and the event listener parameter  braket.
+
+line 15  = in this line the span is connecting /appending to the li.
+line  16 = in this line the deletebutton is connecting /appending to the li.  
+line 17 = and in this line the createnewList function is returning th li.
+line 18 = the createNewList function closes/ends.
+
+  line 20 = in this line there is a function called addList with single parameter 
+            inputbox.
+  line 21 = the queryselector calls a variable ul and appends a chaild to it which has two parameter createnewlist() and inputbox(), also the createnewlist
+
+
+
+
+
+
+
+Line   =  calls the `createElement` method on the DOM object in the global `document` variable. It passes a single string parameter, `li`, to the method, creating a new `li` element in the DOM. This element is not attached to any other element. The new element is returned and saved in to the constant variable called `listItem` 
+ 
