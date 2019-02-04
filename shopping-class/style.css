@@ -60,7 +60,7 @@ rb {
      border: 2px outset white;
      margin-left: -2em;
      color: black;
-     width: 55%;
+     width: 50%;
      display: grid;
      grid-template-columns: 30% 20%;
 }
