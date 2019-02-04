@@ -32,9 +32,14 @@ img {
     color:rgb(97, 33, 60);
   }
  .content {
-   padding-left: 2em;
+   padding-left: 0em;
    font-size: 1.2em;
-   color: white;
+   color: black;
+ }
+
+
+ .forth-row img {
+   display: none;
  }
 
  .second-row {
@@ -44,8 +49,8 @@ img {
  }
 
  #contact {
-   color: white;
-   padding-left: 2em;
+   color: black;
+   padding-left: 0em;
    font-size: 1.2em;
  }
 
@@ -61,7 +66,7 @@ img {
    text-transform: uppercase;
  }
  .title-profile ul li {
-   color: white;
+   color: black;
    font-size: 1.2em;
    padding-left: 2em;
  }
