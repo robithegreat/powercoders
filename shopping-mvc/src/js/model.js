@@ -32,9 +32,25 @@ class Model{
         this.view_.update();
     }
 
+    /**
+     * Delete the i'th item from the list.
+     *
+     * @param i {number}
+     */
+
+    deleteItem(i) {
+        this.items_.splice(i, 1);
+        this.view_.update();
+    }
+    clear(){
+        this.items_ = [];
+        this.view_.update();
+    }
+
     get items() {
         return this.items_.slice();
     }
+
 
 }
 

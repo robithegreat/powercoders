@@ -33,13 +33,6 @@ class ShoppingListItem {
         const deleteButton = document.createElement('button');
         const text = document.createTextNode('Delete');
 
-        deleteButton.addEventListener('click', function () {
-            listItem.remove();
-
-            document.getElementById('clearButton').disabled = document.querySelectorAll('li').length === 0;
-
-        });
-
         deleteButton.appendChild(text);
         listItem.appendChild(deleteButton);
 
