@@ -3,12 +3,12 @@
  */
 
 class Controller {
-    constructor(){
-    console.log('Controller running!');
+    constructor() {
+        console.log('Controller running!');
 
-    /**@private {!Model} Application model */
+        /**@private {!Model} Application model */
 
-    this.model_ = new Model(this);
+        this.model_ = new Model(this);
     }
 
     /**
@@ -17,25 +17,25 @@ class Controller {
      * @param name {string} name of the item to add ,may not be empty
      * @param quantity {string} the quantity of the item to add ,may not be empty
      */
-    addItem(name,quantity){
+    addItem(name, quantity) {
         const item = new ShoppingListItem(name, quantity);
         this.model_.append(item);
     }
 
 
-    
     /**
      * Delete the i'th item from the list.
      *
      * @param i {number}
      */
-    deleteItem(i){
+    deleteItem(i) {
         this.model_.deleteItem(i);
     }
+
     /**
      ** clear the  items from the list.
      */
-    clearList(){
+    clearList() {
         this.model_.clear();
     }
 }

@@ -4,7 +4,7 @@ class View {
      * @param model {!Model} App data model
      * @param controller {!controller} App controller
      */
-    constructor(model, controller){
+    constructor(model, controller) {
         console.log('View ready');
 
         /**@param {!Model} App data model */
@@ -14,7 +14,7 @@ class View {
         this.controller_ = controller;
 
         /**@private {!HTMLElement} Shopping list element */
-        this.shoppingList_= document.querySelector('ul');
+        this.shoppingList_ = document.querySelector('ul');
 
         /**@private {!HTMLElement} input widget for items */
         this.inputBox_ = document.getElementById('item');
@@ -29,31 +29,32 @@ class View {
         this.addItemButton_.addEventListener('click', () => this.addItem());
 
         /** @private {!HTML Element} Button to clear the list */
-        this.clearListButton_= document.getElementById('clearButton');
+        this.clearListButton_ = document.getElementById('clearButton');
 
-        this.clearListButton_.addEventListener('click',() => this.controller_.clearList());
+        this.clearListButton_.addEventListener('click', () => this.controller_.clearList());
 
 
         this.inputBox_.addEventListener('keyup', (event) => this.onkeyup(event));
         this.quantityBox_.addEventListener('keyup', (event) => this.onkeyup(event));
 
 
-
     }
+
     /**
      * Notifies the  controller to add an item to the list.
      */
 
-    addItem(){
+    addItem() {
         const trimmedValue = this.inputBox_.value.trim();
         const trimmedQuantity = this.quantityBox_.value.trim();
 
         this.controller_.addItem(trimmedValue, trimmedQuantity);
     }
+
     /**
      * Update the UI with the shopping list contents.
      */
-    update(){
+    update() {
         while (this.shoppingList_.firstChild) {
             this.shoppingList_.firstChild.remove();
         }
@@ -61,7 +62,7 @@ class View {
             const item = this.model_.items[i];
             const listItem = item.toListItem();
             const deleteButton = listItem.querySelector('button');
-            deleteButton.addEventListener('click', ()=> this.controller_.deleteItem(i));
+            deleteButton.addEventListener('click', () => this.controller_.deleteItem(i));
             this.shoppingList_.appendChild(listItem);
         }
         this.addItemButton_.disabled = true;
@@ -70,6 +71,7 @@ class View {
         this.inputBox_.focus();
         this.clearListButton_.disabled = this.model_.items.length === 0;
     }
+
     /**
      * Hanle keyup events for input widgets. Conditionally
      * enable/disable the addItemButton, and add the item if
@@ -78,15 +80,15 @@ class View {
      * @param event {!KeyboardEvent} Event that triggerd.
      */
 
-    onkeyup(event){
-        const  trimmedValue = this.inputBox_.value.trim();
+    onkeyup(event) {
+        const trimmedValue = this.inputBox_.value.trim();
 
         this.addItemButton_.disabled = trimmedValue === '';
 
-        if (trimmedValue === ''){
+        if (trimmedValue === '') {
             return;
         }
-        if (event.key !== 'Enter'){
+        if (event.key !== 'Enter') {
             return;
         }
         this.addItem();

@@ -6,7 +6,7 @@ class ShoppingListItem {
      * @param name {string} Name
      *@param quantity {string} Quantity
      */
-    constructor(name, quantity){
+    constructor(name, quantity) {
         this.name = name;
         this.quantity = quantity;
     }
@@ -16,14 +16,14 @@ class ShoppingListItem {
      *
      * @returns {HTMLElement} li element
      */
-    toListItem(){
+    toListItem() {
         const listItem = document.createElement('li');
         const span = document.createElement('p');
 
         span.innerText = this.name;
         listItem.appendChild(span);
 
-        if (this    .quantity !== '') {
+        if (this.quantity !== '') {
             listItem.appendChild(document.createTextNode(''));
             const quantityText = document.createElement('span');
             quantityText.textContent = `(${this.quantity})`;
