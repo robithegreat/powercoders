@@ -9,7 +9,24 @@ body{
   font-weight: bold;
   color: green;
 }
-.chekolade p {
+
+span.show {
+  display: inline-block;
+  width: 1em;
+}
+
+span.hide {
+  display: none;
+}
+
+#chekolade.show {
+  display: block;
+}
+
+#chekolade.hide {
+  display: none;
+}
+#chekolade p {
   max-width: 50%;
 }
 h1{
